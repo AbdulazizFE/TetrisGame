@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tetris Game</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+  <main>
+    <h1>Tetris Game By: Abdulaziz</h1>
+    <span class="tetris-container">
+      <canvas id="stage" width="250px" height="500px" style="background-color:black;"> </canvas>
+
+      <span class="tetris-panel-container">
+        <p>Next:</p>
+        <canvas id="next" width="100px" height="100px" style="background-color:black;">
+        </canvas>
+        <p>LINES:<span id="lines">0</span></p>
+        <p><span id="message"></span></p>
+        <div class="tetris-panel-container-padding"></div>
+        <table class="tetris-button-panel">
+         
+          <tr>
+            <td></td>
+            <td id="tetris-rotate-button" class="tetris-button" width="80px" >↻</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td id="tetris-move-left-button"class="tetris-button" width="100px">←</td>
+            <td id="tetris-fall-button"class="tetris-button">↓</td>
+            <td id="tetris-move-right-button"class="tetris-button"  width="100px">→</td>
+          </tr>
+    
+        </table>
+      </span>
+    </span>
+    <p>Abdulaziz &copy;2022</p>
+  </main>
+
+  <script>
+    var tetris = new Tetris();
+    tetris.startGame();
+  </script>
+</body>
+
+</html>
